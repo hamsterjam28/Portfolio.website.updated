@@ -1,0 +1,110 @@
+
+/*
+body {
+    background: url(images/ocean.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} the background img for the pg
+*/
+
+#main_container {
+    width: 1024px;
+    height: 768px;
+}
+
+#logo {
+    width: 217px;
+    position: relative;
+    margin: auto;
+    top: 93px;
+}
+
+
+/* My logo at the top of the page*/
+
+.container {
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Muli', sans-serif;
+    font-size: 25pt;
+} /* Navigation Bar*/
+
+
+
+
+/* unvisited link */
+
+a:link {
+    color: white;
+}
+
+h1 {
+    /* Nia Anderson on home page with black text shadow*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0 #000000, 0 5px 0 #000000, 0 6px 1px rgba(0, 0, 0, 0), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, 0), 0 3px 5px rgba(0, 0, 0, 0), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, 0), 0 20px 20px rgba(0, 0, 0, .15);
+    font-family: 'Pacifico', cursive;
+    font-size: 90pt;
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    color: #FF8888;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7A7775;
+    opacity: .80;
+} /* Navigation Bar transitions*/
+
+li {
+    float: left;
+} /* more Navigation Bar transitions*/
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #4F4A47 (light gray) on hover */
+
+li a:hover {
+    background-color: #4F4A47;
+    color: white;
+}
+
+/* #about {
+    background: url(images/trees.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+.nia1 {
+    /* About Me on About page*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0 #000000, 0 5px 0 #000000, 0 6px 1px rgba(0, 0, 0, 0), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, 0), 0 3px 5px rgba(0, 0, 0, 0), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, 0), 0 20px 20px rgba(0, 0, 0, .15);
+    font-family: 'Pacifico', cursive;
+    font-size: 59pt;
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    color: #FF8888;
+}
