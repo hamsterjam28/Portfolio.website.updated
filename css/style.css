@@ -148,12 +148,6 @@ li a:hover {
 
 /*Slideshow Css*/
 
-.w3-content w3-display-container {
-    display: flex;
-    align-content: center;
-    border: 10px;
-    padding: 500px;
-}
 
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
