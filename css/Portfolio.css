@@ -1,0 +1,110 @@
+<!-- Here starts the slideshow-->
+
+<div class="slideshow" style="max-width:800px">
+  <img class="mySlides" src="images/Sky.jpg" style="width:800px">
+  <img class="mySlides" src="images/sunset.JPG" style="width:800px">
+  <img class="mySlides" src="images/" style="width:800px">
+
+
+</div>
+
+
+
+
+
+
+<script>
+var myIndex = 0;
+var myIndex1 = 0;
+
+/* this is to make my slideshow */
+
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+
+    /* this is to make my news have a dropdown bar */
+
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+    function myFunction1() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+    function filterFunction1() {
+    var  input, filter, ul, li, a, i;
+    div = document.getElementById("myDropdown2");
+    a = div.getElementsByTagName("b");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+/* slideshow css*/
+
+/* this is the start of slideshow */
+.show {display:block;}
+
+.slideshow {
+    width: 800px;
+    height: 599px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+}
+
+gallery {
+    display:flex;
+    flex-wrap: wrap-reverse;
+
+}
+
+
+
+
+/* this is end of slideshow */

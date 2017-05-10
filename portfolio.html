@@ -6,6 +6,7 @@
     <title>Nia's Portfolio Website</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Muli|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- COMMENTS ARE NECESSARY!-->
 
     <style>
@@ -46,81 +47,51 @@
 
     <h1 class="port"> Portfolio </h1>
 
+<!-- start of slideshow!-->
 
-<!-- Here starts the slideshow-->
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="images/Sky.jpg" style="width:100%">
+  <img class="mySlides" src="images/sunset.JPG" style="width:100%">
+  <img class="mySlides" src="images/hallway.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
 
-<div class="slideshow" style="max-width:800px">
-  <img class="mySlides" src="images/Sky.jpg" style="width:800px">
-  <img class="mySlides" src="images/sunset.JPG" style="width:800px">
-  <img class="mySlides" src="images/hallway.jpg" style="width:800px">
-
-
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
 </div>
 
-
-
-
-
-
 <script>
-var myIndex = 0;
-var myIndex1 = 0;
+var slideIndex = 1;
+showDivs(slideIndex);
 
-/* this is to make my slideshow */
-
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 4000); // Change image every 2 seconds
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
 
-    /* this is to make my news have a dropdown bar */
-
-    function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function currentDiv(n) {
+  showDivs(slideIndex = n);
 }
 
-
-    function myFunction1() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-}
-
-function filterFunction() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    div = document.getElementById("myDropdown");
-    a = div.getElementsByTagName("a");
-    for (i = 0; i < a.length; i++) {
-        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-        } else {
-            a[i].style.display = "none";
-        }
-    }
-}
-
-    function filterFunction1() {
-    var  input, filter, ul, li, a, i;
-    div = document.getElementById("myDropdown2");
-    a = div.getElementsByTagName("b");
-    for (i = 0; i < a.length; i++) {
-        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-        } else {
-            a[i].style.display = "none";
-        }
-    }
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
 }
 </script>
+
 
 
 
