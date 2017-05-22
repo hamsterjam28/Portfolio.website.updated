@@ -9,6 +9,18 @@ body {
 } the background img for the pg
 */
 
+.container {
+    position: fixed;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Muli', sans-serif;
+    font-size: 25pt;
+} /* Navigation Bar*/
+
+
 body {
     margin: 0px;
 }
@@ -24,21 +36,7 @@ body {
     position: relative;
     margin: auto;
     top: 93px;
-}
-
-
-/* My logo at the top of the page*/
-
-.container {
-    position: fixed;
-    list-style-type: none;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    font-family: 'Muli', sans-serif;
-    font-size: 25pt;
-} /* Navigation Bar*/
+} /* My logo at the top of the page*/
 
 
 
