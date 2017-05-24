@@ -402,13 +402,16 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
 }
 
 .bio {
+    display: flex;
     border-style: solid;
     border-color: #FF8888;
     background-color: white;
     border-width: 10px;
     padding: 20px;
     align-content: flex-start;
-    width: 500px
+    width: 500px;
+    position: relative;
+    z-index: auto;
 
 }
 
