@@ -216,7 +216,7 @@ li a:hover {
 
 }
 
-.bio {
+.bioo {
     display: flex;
     border-style: solid;
     border-color: #FF8888;
@@ -239,7 +239,7 @@ li a:hover {
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {opacity: 0.8;}
 
 /* The Modal (background) */
 .modal {
@@ -319,4 +319,9 @@ li a:hover {
     }
 }
 
+#modalss {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 
