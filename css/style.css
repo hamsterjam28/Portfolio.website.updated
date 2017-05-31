@@ -236,8 +236,10 @@ li a:hover {
 #resume {
     display: flex;
     align-content: center;
-    width: auto;
-    height: auto
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    position: absolute;
 }
 
 /*!!!!the start of the modal!!!!*/
