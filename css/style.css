@@ -216,7 +216,7 @@ li a:hover {
 
 }
 
-.bioo {
+#bioo {
     display: flex;
     border-style: solid;
     border-color: #FF8888;
